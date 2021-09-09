@@ -88,8 +88,8 @@ add_library(ad9361 ad9361_multichip_sync.c
             ad9361_fmcomms5_phase_sync.c
             ${FD_SRC_FILES}
             ${LIBAD9361_HEADERS})
-#enable_testing()
-#add_subdirectory(test)
+enable_testing()
+add_subdirectory(test)
 set_target_properties(ad9361 PROPERTIES
 	VERSION ${VERSION}
 	SOVERSION ${LIBAD9361_VERSION_MAJOR}
